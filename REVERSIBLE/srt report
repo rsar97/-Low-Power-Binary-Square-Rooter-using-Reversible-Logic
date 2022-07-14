@@ -1,0 +1,85 @@
+Report : power
+        -analysis_effort low
+Design : sqrt_srt_n
+Version: J-2014.09-SP5-4
+Date   : Sun Mar 17 20:28:26 2019
+****************************************
+
+
+Library(s) Used:
+
+    saed90nm_max (File: /home/synopsys/90nmtech/SAED_EDK90nm/Digital_Standard_cell_Library/synopsys/models/saed90nm_max.db)
+
+
+Operating Conditions: WORST   Library: saed90nm_max
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+sqrt_srt_n             8000              saed90nm_max
+srt_0                  ForQA             saed90nm_max
+mulx_0                 ForQA             saed90nm_max
+srt_1                  ForQA             saed90nm_max
+srt_2                  ForQA             saed90nm_max
+srt_3                  ForQA             saed90nm_max
+srt_4                  ForQA             saed90nm_max
+srt_5                  ForQA             saed90nm_max
+srt_6                  ForQA             saed90nm_max
+srt_7                  ForQA             saed90nm_max
+srt_8                  ForQA             saed90nm_max
+srt_9                  ForQA             saed90nm_max
+srt_10                 ForQA             saed90nm_max
+srt_11                 ForQA             saed90nm_max
+srt_12                 ForQA             saed90nm_max
+srt_13                 ForQA             saed90nm_max
+srt_14                 ForQA             saed90nm_max
+srt_15                 ForQA             saed90nm_max
+srt_16                 ForQA             saed90nm_max
+srt_17                 ForQA             saed90nm_max
+srt_18                 ForQA             saed90nm_max
+srt_19                 ForQA             saed90nm_max
+mulx_1                 ForQA             saed90nm_max
+mulx_2                 ForQA             saed90nm_max
+mulx_3                 ForQA             saed90nm_max
+mulx_4                 ForQA             saed90nm_max
+mulx_5                 ForQA             saed90nm_max
+mulx_6                 ForQA             saed90nm_max
+mulx_7                 ForQA             saed90nm_max
+mulx_8                 ForQA             saed90nm_max
+mulx_9                 ForQA             saed90nm_max
+mulx_10                ForQA             saed90nm_max
+mulx_11                ForQA             saed90nm_max
+
+
+Global Operating Voltage = 0.7  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  =  56.3939 uW   (79%)
+  Net Switching Power  =  15.0721 uW   (21%)
+                         ---------
+Total Dynamic Power    =  71.4660 uW  (100%)
+
+Cell Leakage Power     =   5.4089 uW
+
+Information: report_power power group summary does not include estimated clock tree power. (PWR-789)
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           0.0000            0.0000            0.0000            0.0000  (   0.00%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational     56.3939           15.0721        5.4089e+06           76.8749  ( 100.00%)
+--------------------------------------------------------------------------------------------------
+Total             56.3939 uW        15.0721 uW     5.4089e+06 pW        76.8749 uW
+dc_shell> 
+
